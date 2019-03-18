@@ -1,0 +1,1 @@
+python rotate_simple.py --image thuoc.jpg
