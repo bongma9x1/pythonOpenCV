@@ -1,0 +1,1 @@
+python cat_detector.py --image cat.jpg

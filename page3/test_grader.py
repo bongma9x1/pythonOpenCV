@@ -14,7 +14,7 @@ args = vars(ap.parse_args())
  
 # define the answer key which maps the question number
 # to the correct answer
-ANSWER_KEY = {0: 1, 1: 4, 2: 0, 3: 3, 4: 1}
+ANSWER_KEY = {0: 1, 1: 1, 2: 0, 3: 3, 4: 1}
 
 # load the image, convert it to grayscale, blur it
 # slightly, then find edges
@@ -122,7 +122,7 @@ for (q, i) in enumerate(np.arange(0, len(questionCnts), 5)):
 		correct += 1
 		print(correct)
 		# draw the outline of the correct answer on the test
-		cv2.drawContours(paper, [cnts[k]], -1, color, 3)
+	cv2.drawContours(paper, [cnts[k]], -1, color, 3)
 
 # grab the test taker
 print(correct)
